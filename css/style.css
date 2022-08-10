@@ -13,6 +13,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 a {
   color: #fff;
@@ -160,15 +163,16 @@ cursor: pointer;
 
 /* FOOTER */
 .footer {
-	margin-top: 194px;
-	padding-top: 20px;
+	
+	
 	height: 60px;
 	background-color: #030102;
 }
 .footer__inner{
+	padding-top: 20px;
 	display: flex;
 	justify-content: space-between;
-	align-items: start;
+	align-items: center;
 }
 .footer-copyright {
 	align-items: center;
@@ -176,11 +180,9 @@ cursor: pointer;
 .footer-list {
 	display: flex;
 }
-.footer-list-item {
+.footer-list-item:not(:last-child) {
 	padding-right: 25px;
 }
-.footer-list-item:last-child {
-	padding-right: 0px;
-}
+
 .footer-link {
 }
