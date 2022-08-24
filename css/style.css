@@ -16,7 +16,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-	padding-top: 64px;
 }
 a {
     color: #fff;
@@ -33,6 +32,7 @@ ul {
 
 /*************************** HEADER */
 .header {
+	padding-top: 64px;
 }
 
 .header__inner {
@@ -161,24 +161,24 @@ ul {
 
 /* FOOTER */
 .footer {
-    height: 60px;
     background-color: #030102;
 }
-.footer__inner {
-    padding-top: 20px;
+
+/* FOOTER FLEXBOX */
+.footer__row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+
+	min-height: 60px;
 }
-.footer-copyright {
-    align-items: center;
-}
+
 .footer-list {
     display: flex;
 }
+
 .footer-list-item:not(:last-child) {
-    padding-right: 25px;
+    margin-right: 25px;
 }
 
-.footer-link {
-}
