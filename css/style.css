@@ -57,7 +57,12 @@ ul {
 }
 
 .menu__item:not(:last-child) {
-  margin-right: 24px;
+	margin-right: 24px;
+}
+
+.menu__item-link {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 /* SOCIAL */
@@ -197,4 +202,9 @@ ul {
 
 .footer-list-item:not(:last-child) {
   margin-right: 25px;
+}
+
+.footer-link {
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
